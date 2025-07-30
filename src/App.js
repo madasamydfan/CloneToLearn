@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './pages/HomePage';
-import ReasonsPage from './pages/ReasonsPage';
+import NetflixSignIn from './pages/temp.jsx/NetflixSignIn';
+
 function App() {
   return (
     <>
      <HomePage></HomePage>
-     <ReasonsPage></ReasonsPage>
-    
     </>
    
   );
