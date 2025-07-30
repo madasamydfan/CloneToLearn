@@ -1,0 +1,11 @@
+.language-box{
+    height: 1cm;
+    width: 3cm;
+    
+    color:rgb(255,255,255);
+     border-radius: 3px;
+    background-color: rgb(33, 33, 33);
+}
+.lang-option{
+    color: rgb(255,255,255);
+}

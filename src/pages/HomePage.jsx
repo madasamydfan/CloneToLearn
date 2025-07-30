@@ -3,6 +3,7 @@ import SignInButton from "../signinbutton";
 import "./HomePage.css"; // Link the CSS file
 import backgroundImage from "../assets/img/backgrn.jpg"; // adjust path accordingly
 import Login from "../loginBox";
+
 const HomePage = () => {
   const style = {
     backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${backgroundImage})`,
