@@ -1,16 +1,12 @@
-
+import Suggestion from './components/suggestion';
 import './App.css';
-import Login from './loginBox';
-import SignInButton from './signinbutton';
+import HomePage from './pages/HomePage';
 function App() {
   return (
-
     <>
-      <Login></Login>
-    <SignInButton></SignInButton>
+     <Suggestion></Suggestion>
     </>
-
+   
   );
 }
-
 export default App;
