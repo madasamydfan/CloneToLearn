@@ -2,7 +2,7 @@ import React from "react";
 
 import "./HomePage.css"; // Link the CSS file
 
-const HeroSection = () => {
+const HomePage = () => {
     // const style={
     //     background-Image:
     // }
@@ -34,4 +34,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HomePage;
