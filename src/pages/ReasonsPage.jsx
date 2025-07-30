@@ -1,16 +1,12 @@
 import reasons from '../constants/reasons';
 import ReasonCard from '../components/ReasonCard';
+import '../components/ReasonCard.css';
+import './Reasonpage-card.css';
 export default function ReasonsPage() {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          gap: "20px",
-          padding: "20px",
-          flexWrap: "wrap",
-        }}
-      >
+    <div className="ReasonsPage">
+<div className="Reasonpage-card">
         {reasons.map((reason, index) => (
           <ReasonCard
             key={index}
@@ -20,6 +16,8 @@ export default function ReasonsPage() {
           />
         ))}
       </div>
+    </div>
+      
     </>
   );
 }

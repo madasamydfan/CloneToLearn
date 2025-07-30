@@ -1,17 +1,28 @@
 import React from "react";
-
+import SignInButton from "../signinbutton";
 import "./HomePage.css"; // Link the CSS file
-
+import backgroundImage from "../assets/img/backgrn.jpg"; // adjust path accordingly
+import Login from "../loginBox";
 const HomePage = () => {
-    // const style={
-    //     background-Image:
-    // }
+  const style = {
+    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+    width: "100%",
+    color: "#fff",
+  };
   return (
-    <div className="hero-container">
+    <div className="hero-container" style={style}>
       {/* Navbar */}
       <div className="navbar">
-        <h1 className="logo">NETFLIX</h1>
-        {/* <SignInButton /> */}
+        <img
+          src={require("../assets/img/Netflixlogo.png")}
+          alt="Netflix Logo"
+          className="logo"
+        />
+        <SignInButton text={"Sign in"} />
       </div>
 
       {/* Main Content */}
@@ -26,8 +37,10 @@ const HomePage = () => {
         </p>
 
         <div className="hero-input-group">
-          {/* <EmailInput />
-          <GetStartedButton /> */}
+          <div className="for-column">
+            <Login />
+            <SignInButton text={"Get Started"} />
+          </div>
         </div>
       </div>
     </div>
