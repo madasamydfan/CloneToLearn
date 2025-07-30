@@ -1,10 +1,10 @@
-import Suggestion from './components/suggestion';
+import Footer from './pages/footer';
 import './App.css';
 import HomePage from './pages/HomePage';
 function App() {
   return (
     <>
-     <Suggestion></Suggestion>
+     <Footer></Footer>
     </>
    
   );
