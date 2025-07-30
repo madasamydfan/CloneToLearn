@@ -1,7 +1,11 @@
 import React from "react";
+
 import "./HomePage.css"; // Link the CSS file
 
 const HeroSection = () => {
+    // const style={
+    //     background-Image:
+    // }
   return (
     <div className="hero-container">
       {/* Navbar */}
