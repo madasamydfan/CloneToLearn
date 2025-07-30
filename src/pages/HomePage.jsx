@@ -5,7 +5,7 @@ import backgroundImage from "../assets/img/backgrn.jpg"; // adjust path accordin
 import Login from "../loginBox";
 const HomePage = () => {
   const style = {
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${backgroundImage})`,
+    backgroundImage: ` radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
@@ -27,10 +27,10 @@ const HomePage = () => {
 
       {/* Main Content */}
       <div className="hero-content">
-        <h1 className="hero-title">
+        <p className="hero-title">
           Unlimited movies, TV <br className="hide-on-mobile" />
           shows and more
-        </h1>
+        </p>
         <p className="hero-subtitle">Starts at ₹149. Cancel at any time.</p>
         <p className="hero-description">
           Ready to watch? Enter your email to create or restart your membership.
