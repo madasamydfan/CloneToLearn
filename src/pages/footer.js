@@ -7,7 +7,7 @@ const Footer = () => {
                 <h4 className="text">Questions? Call</h4>
                 <a href="" className="angertag1"> 000-800-919-1743</a>
             </div>
-            <div className="inner-box">
+            <div className="inner-box-in">
                 <div className="inner-box1">
                     <a href="" className="angertag"> FAQ</a>
                     <a href="" className="angertag"> Account</a>

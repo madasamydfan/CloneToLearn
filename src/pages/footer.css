@@ -13,10 +13,18 @@
 }
 
 
+.inner-box-in{
+    display: flex;
+    flex-direction: row;
+    padding: 0.65cm;
+    width: 100%;
+    justify-content: space-evenly;
+}
 .inner-box{
     display: flex;
     flex-direction: row;
     padding: 0.65cm;
+    width: 100%;
 }
 .angertag1{
     color: rgb(108, 105, 105);
@@ -29,6 +37,7 @@
 .inner-box1{
     margin: 0.5cm;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
 }
 .language-box{

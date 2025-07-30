@@ -1,0 +1,32 @@
+.trending-card {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+
+  width: 180px;
+  height: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.number-overlay {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  margin-right: 10px;
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
