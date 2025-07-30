@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TrendingCard from '../components/TrendingCard';
+import MoviePopupCard from './MoviePopupCard ';
 import './TrendingPages.css';
 import mov1 from  '../assets/img/mov1.webp';
 import mov2 from  '../assets/img/mov2.webp';
@@ -17,14 +18,27 @@ const TrendingPages = () => {
     ];
    
 
-const [showMoviePopUp,setShowMoviePopUp]= useState(false);
+const getMovieDetails = (number) => {
+    const details = movieDetails.find(movie => movie.id === number);
+    return details;
+}
+
+const [showMoviePopUp, setShowMoviePopUp] = useState(false);
+const [selectedMovieDetails, setSelectedMovieDetails] = useState(null);
+    
     const handleMovieOnClick = (number) => {
-        // handle logic here, e.g., navigate or show details
         console.log('Clicked movie number:', number);
-        get
-        setShowMoviePopUp(true);
+        const details = getMovieDetails(number);
+        console.log(details);
+        if (details) {
+            setSelectedMovieDetails(details);
+            setShowMoviePopUp(true);
+        }
+    };
 
-
+    const handleClosePopup = () => {
+        setShowMoviePopUp(false);
+        setSelectedMovieDetails(null);
     };
 
     return (
@@ -37,6 +51,21 @@ const [showMoviePopUp,setShowMoviePopUp]= useState(false);
                     </div>
                 ))}
             </div>
+
+            {/* Movie Popup Card */}
+            {showMoviePopUp && selectedMovieDetails && (
+                <div className="popup-overlay" onClick={handleClosePopup}>
+                    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+                        <button className="close-button" onClick={handleClosePopup}>×</button>
+                        <MoviePopupCard 
+                            posterImage={selectedMovieDetails.posterImage}
+                            titleImage={selectedMovieDetails.titleImage}
+                            tags={selectedMovieDetails.tags}
+                            description={selectedMovieDetails.description}
+                        />
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

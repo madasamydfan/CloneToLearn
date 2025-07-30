@@ -1,40 +1,49 @@
 
-
+import sq from '../assets/movies/sq.webp'
+import sqtext from '../assets/movies/sqtext.webp'
+import gretext from '../assets/movies/gretext.webp'
+import greind from '../assets/movies/greind.webp'
+import chaavaa from '../assets/movies/chaavaa.webp'
+import chhava from '../assets/movies/chhava.webp'
+import aap from '../assets/movies/aap.webp'
+import aaptext from '../assets/movies/aaptext.webp'
+import thug from '../assets/movies/thug.webp'
+import thugtext from '../assets/movies/thugtext.webp'
 const movieDetails = [
     {
         id: 1,
-        posterImage: 'poster1.jpg',
-        titleImage: 'title1.png',
-        tags: ['Action', 'Adventure'],
-        description: 'Description for movie 1.',
+        posterImage: sq,
+        titleImage: sqtext,
+        tags: ['2025', 'A', 'Show', 'Thriller', 'Drama'],
+        description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.",
     },
     {
         id: 2,
-        posterImage: 'poster2.jpg',
-        titleImage: 'title2.png',
-        tags: ['Drama', 'Romance'],
-        description: 'Description for movie 2.',
+        posterImage: greind,
+        titleImage: gretext,
+        tags: ['2025','U/A 13+','Show','Talk Shows'],
+        description: 'Comedian Kapil Sharma hosts this laugh-out-loud variety talk show with celebrity guests, hilarious antics and his signature supporting cast.',
     },
     {
         id: 3,
-        posterImage: 'poster3.jpg',
-        titleImage: 'title3.png',
+        posterImage: chaavaa,
+        titleImage: chhava,
         tags: ['Comedy', 'Family'],
-        description: 'Description for movie 3.',
+        description: 'After the death of his father, warrior-king Sambhaji Maharaj battles Mughal forces led by Aurangzeb to keep the Maratha Empire alive.',
     },
     {
         id: 4,
-        posterImage: 'poster4.jpg',
-        titleImage: 'title4.png',
+        posterImage: aap,
+        titleImage: aaptext,
         tags: ['Thriller', 'Mystery'],
-        description: 'Description for movie 4.',
+        description: 'Shrirenu lives by tradition. Madhu lives unapologetically. When their paths cross, a tender romance unfolds — awkward, sweet but shadowed by patriarchy.',
     },
     {
         id: 5,
-        posterImage: 'poster5.jpg',
-        titleImage: 'title5.png',
-        tags: ['Sci-Fi', 'Fantasy'],
-        description: 'Description for movie 5.',
+        posterImage: thug,
+        titleImage: thugtext,
+        tags: ['Sci-Fi', 'U/A 16+'],
+        description: "When a fatal shootout ruins a young boy's life, a gangster takes him in. Years later, a struggle for power leads them down a dark path.",
     },
 ];
 
