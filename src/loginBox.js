@@ -10,10 +10,11 @@ const Login = () => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-
+  
   const handleChange = (e) => {
     setEmail(e.target.value);
     setError(""); 
+    console.log(email)
   };
 
   const handleBlur = () => {

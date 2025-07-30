@@ -3,6 +3,7 @@ import SignInButton from "../signinbutton";
 import "./HomePage.css"; // Link the CSS file
 import backgroundImage from "../assets/img/backgrn.jpg"; // adjust path accordingly
 import Login from "../loginBox";
+import LoginBottom from "../loginBottom";
 const HomePage = () => {
   const style = {
     backgroundImage: ` radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${backgroundImage})`,
@@ -38,8 +39,7 @@ const HomePage = () => {
 
         <div className="hero-input-group">
           <div className="for-column">
-            <Login />
-            <SignInButton text={"Get Started"} />
+           <LoginBottom></LoginBottom>
           </div>
         </div>
       </div>

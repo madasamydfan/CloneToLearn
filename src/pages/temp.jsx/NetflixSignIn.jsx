@@ -20,7 +20,11 @@ function NetflixSignIn() {
     return (
         <div className="netflix-signin-container">
             <header className="netflix-header">
-                <img src="/netflix-logo.png" alt="Netflix Logo" className="netflix-logo" />
+                 <img
+          src={require("../../assets/img/Netflixlogo.png")}
+          alt="Netflix Logo"
+          className="logo"
+        />
             </header>
             <div className="signin-form-wrapper">
                 <form className="signin-form" onSubmit={handleSignIn}>
@@ -66,7 +70,7 @@ function NetflixSignIn() {
                     </div>
                     <div className="new-to-netflix">
                         New to Netflix?{' '}
-                        <a href="#" className="signup-link">
+                        <a href="/" className="signup-link">
                             Sign up now.
                         </a>
                     </div>
