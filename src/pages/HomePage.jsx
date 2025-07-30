@@ -1,13 +1,18 @@
 import React from "react";
 
 import "./HomePage.css"; // Link the CSS file
-
-const HeroSection = () => {
+import backgroundImage from "../assets/img/backgrn.jpg"; // adjust path accordingly
+const HomePage = () => {
     const style={
-        background-Image:
-    }
+       backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center center",
+    height: "100vh",
+    width: "100%"
+    };
   return (
-    <div className="hero-container">
+    <div className="hero-container" style={style}>
       {/* Navbar */}
       <div className="navbar">
         <h1 className="logo">NETFLIX</h1>
@@ -34,4 +39,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HomePage;
