@@ -8,11 +8,10 @@ import TrendingPages from './pages/TrendingPages'
 function App() {
   return (
     <>
-     {/* <HomePage></HomePage>
+     <HomePage></HomePage>
       <TrendingPages/>
      <ReasonsPage/>
-
-     */}
+     
     </>
    
   );
