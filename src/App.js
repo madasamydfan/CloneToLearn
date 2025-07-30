@@ -3,11 +3,12 @@ import './App.css';
 import HomePage from './pages/HomePage';
 import NetflixSignIn from './pages/temp.jsx/NetflixSignIn';
 
+import FAQList from './pages/FAQList';
+
 function App() {
   return (
     <>
-     {/* <HomePage></HomePage> */}
-     <NetflixSignIn></NetflixSignIn>
+  
     </>
    
   );
