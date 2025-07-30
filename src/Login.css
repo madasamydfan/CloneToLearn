@@ -1,0 +1,13 @@
+.login-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-input{
+    height: 10px;
+}
