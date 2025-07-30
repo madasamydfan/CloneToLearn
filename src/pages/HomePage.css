@@ -1,3 +1,87 @@
-.Header-container{
-    display: flex;
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black; /* You can replace this with background-image */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e50914;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  height: calc(100vh - 100px); /* Leave room for navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.hero-description {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+/* Input group */
+.hero-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-input-group {
+    flex-direction: row;
+  }
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: inline;
+  }
 }
